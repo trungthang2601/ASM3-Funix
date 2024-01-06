@@ -1,0 +1,348 @@
+/* Column Classes */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+        position: relative;
+        width: 100%;
+        background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('../images/banner.jpg');
+        background-size: cover;
+        height: 50vh;
+    }
+
+    /* Navigation Styles */
+    #nav-bar .container {
+        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #nav-bar .container a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 450;
+        text-transform: uppercase;
+        font-size: 14px;
+        width: 100%;
+        height: 50px;
+        border: none;
+    }
+
+    #nav-bar .container a:first-child {
+        border: none;
+    }
+
+    #nav-bar .container .name .name-profile {
+        width: 50px;
+        height: 60px;
+        border-left: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+    }
+
+    #nav-bar .container .name .name-profile img {
+        display: none;
+    }
+
+    /* ABOUT CSS */
+
+    #about.bg-grey .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        padding: 0;
+    }
+
+    #about.bg-grey .container #target {
+        grid-column: 1 / 2;
+        background-color: #f7f7f7;
+        padding-left: calc(100% - 384px);
+    }
+
+    #personal-info {
+        grid-column: 2 / 3;
+        background-color: #ced4da;
+        padding-right: calc(100% - 384px);
+    }
+
+    #personal-info .personal-info-wrapper .info {
+        margin-left: -30px;
+    }
+
+    /* Job Info CSS */
+    #job-info .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        line-height: 1.6;
+        gap: 20px;
+        color: #495057;
+    }
+
+    #job-info .container .experience h5 span {
+        background-color: #199cdb;
+        padding: 2px 4px;
+        border-radius: 2px;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    /* Certificate CSS */
+
+    #certificate .container img {
+        width: 200px;
+        height: 100px;
+    }
+
+    #certificate .container h4 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #certificate .container .certificate-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #certificate .container .certificate-content .web-certificate {
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #certificate .container .certificate-content .javascript-certificate {
+        grid-column: 2 / -1;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid #ffa94d;
+    }
+
+    #certificate .container .certificate-content .javascript-certificate img {
+        border: none;
+    }
+
+    #certificate .container .certificate-content .database-certificate {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        border-top: 1px solid #ffa94d;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Project CSS */
+
+    /* Project Styles */
+    #project .container {
+        display: grid;
+        grid-template-columns: 0fr 1fr 1fr 1fr;
+        grid-template-rows: 0fr 1fr;
+        gap: 5px;
+
+        /* font-size: 10px; */
+    }
+
+    #project .container img {
+        width: 160px;
+        height: auto;
+    }
+
+    #project .container h1 {
+        grid-column: 1/ -1;
+        grid-row: 1 / 2;
+    }
+
+    #project .container .project-left h4,
+    #project .container .project-center h4,
+    #project .container .project-right h4 {
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #project .container .project-left {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #project .container .project-center {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #project .container .project-right {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #project .container .project-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        padding: 0px;
+    }
+
+    #project .container .project-wrapper span {
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-left: 20px;
+    }
+
+    #project .container .project-wrapper .user-1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #project .container .project-wrapper .lamp {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #project .container .project-describe {
+        font-size: 12px;
+    }
+
+    /* DIGITAL-CV */
+
+    #project-charter {
+        display: block;
+        grid-template-rows: 1fr;
+    }
+
+    #project-charter .goals,
+    #project-charter .team,
+    #project-charter .scopes,
+    #project-charter .primary,
+    #project-charter .timeline {
+        display: block;
+    }
+
+    #project-charter .goals,
+    #project-charter .goals .goals-one,
+    #project-charter .goals .goals-two,
+    #project-charter .goals .goals-three {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project-charter .goals i,
+    #project-charter .team i {
+        font-size: 36px;
+    }
+
+    #project-charter .team .team-detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project-charter .team .team-detail i {
+        text-align: center;
+    }
+
+    /* PRIMARY */
+
+    #project-charter .primary .primary-first,
+    #project-charter .primary .primary-second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project-charter .timeline .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project-charter .timeline .wrapper .number-index {
+        width: 48px;
+        height: 48px;
+        background-color: #b197fc;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid #444;
+        color: #fff;
+        font-size: 24px;
+        padding-top: 5px;
+    }
+
+    /* Footer Styles */
+    #footer .container ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #footer .container ul li {
+        list-style: none;
+    }
+
+    #footer .container ul li a {
+        text-decoration: none;
+    }
+}

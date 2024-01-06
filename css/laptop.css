@@ -1,0 +1,272 @@
+/* Variable Definitions */
+/* Đặt các giá trị màu sắc và kích thước vào biến để dễ quản lý và tái sử dụng */
+:root {
+    --main-color: #199cdb;
+    --background-grey: #f7f7f7;
+    --text-color: #495057;
+    --border-color: #d0d0d0;
+}
+
+/* Reset Styles */
+/* Thiết lập margin và padding về 0 và sử dụng box-sizing là border-box để giảm các vấn đề về kích thước của các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Rubik", sans-serif;
+    color: var(--text-color);
+}
+
+/* Header Styles */
+/*Tạo một header với hiệu ứng gradient và hình ảnh nền.*/
+header {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('../images/banner.jpg');
+    background-size: cover;
+    height: 60vh;
+}
+
+#banner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: 500;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1.05;
+    margin-bottom: 7px;
+}
+
+header #banner span {
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: 'open_sanslight', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section Container Styles */
+section>.container {
+    padding: 30px 50px;
+}
+
+/* Navigation Bar Styles */
+#nav-bar .container {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+#nav-bar .container a {
+    padding: 20px 20px;
+    display: block;
+    text-decoration: none;
+    border-right: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+#nav-bar .container a:first-child {
+    border-left: 1px solid var(--border-color);
+}
+
+#nav-bar .container a:nth-child(2) {
+    border-right: none;
+}
+
+#nav-bar .container a i {
+    color: var(--main-color);
+}
+
+#nav-bar .container .name {
+    position: relative;
+    width: 200px;
+    align-self: stretch;
+}
+
+.name-profile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 100%;
+}
+
+.name-profile img {
+    border: 10px solid white;
+    border-radius: 50%;
+    width: 100%;
+}
+
+#nav-bar .container .div {
+    font-family: 'open_sansregular', sans-serif;
+    font-size: 30px;
+}
+
+#nav-bar .container .name p {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 12px;
+}
+
+/* About Section Styles */
+/* Cho phần giới thiệu ("about") có background xám nhạt và căn lề bên trái. */
+#about .container {
+    max-width: unset;
+}
+
+#about.bg-grey {
+    display: block;
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 14px;
+}
+
+#about.bg-grey .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0;
+}
+
+#about.bg-grey .container #target p {
+    line-height: 1.6;
+    height: 96px;
+}
+
+#about.bg-grey .container #target h1 {
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#about.bg-grey .container #target {
+    grid-column: 1 / 2;
+    background-color: var(--background-grey);
+    padding-left: calc(100% - 520px);
+}
+
+#about.bg-grey .container #target .target-wrapper {
+    padding: 50px;
+    padding-bottom: 100px;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+#about.bg-grey .container #personal-info {
+    grid-column: 2 / 3;
+    background-color: #ced4da;
+    padding-right: calc(100% - 520px);
+}
+
+#about.bg-grey .container #personal-info .personal-info-wrapper {
+    padding: 50px 0px 50px 40px;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+#personal-info ul {
+    list-style: none;
+}
+
+#personal-info .section-title {
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#personal-info p {
+    margin-top: 20px;
+}
+
+#personal-info p i {
+    color: var(--main-color);
+}
+
+/* Job Information Styles */
+/* Định dạng tiêu đề cho các phần thông tin công việc ("job-info") */
+#job-info .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 1.6;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+#job-info .container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#job-info .container .experience,
+.education,
+.activity,
+.favorite,
+.language,
+.skrill {
+    border: 1px solid #444;
+    padding: 30px;
+}
+
+#job-info .container .favorite .favorite-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+#job-info .container .favorite .favorite-content p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#job-info .container .experience h1,
+#job-info .container .activity h1,
+#job-info .container .education h1,
+#job-info .container .skrill h1,
+#job-info .container .language h1,
+#job-info .container .favorite h1 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.row {
+    position: relative;
+    padding-left: 20px;
+}
+
+#job-info .container .experience h5 span {
+    background-color: var(--main-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#job-info .container h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-family: "open_sanslight", sans-serif;
+    font-size: 14

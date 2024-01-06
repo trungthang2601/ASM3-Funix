@@ -1,0 +1,172 @@
+@media only screen and (max-width: 600px) 
+{
+  /* For mobile phones: */
+    /* BANNER */
+    header
+    {
+        position: relative;
+        width: 100%;
+        background-image: linear-gradient(rgba(34,34,34,0.6),rgba(34,34,34,0.6)), url('../images/banner.jpg');
+        background-size: cover;
+        height: 50vh;
+    }
+
+    /* NAVIGATION BAR */
+  #nav-bar .container
+    {
+    display: flex;
+    flex-direction: column; 
+    border: none;
+
+    }
+
+    #nav-bar .container a
+    {
+        justify-content:left;
+    }
+    #nav-bar .container .name
+    {
+        display: none;
+        border: none;
+    }
+
+    /* ABOUT */
+
+    #about.bg-grey .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about.bg-grey .container #target 
+    {
+        padding-left: 40px;
+    }
+
+    /* JOB INFORMATION */
+    #job-info .container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Certificate */
+    #certificate .container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #certificate .container .certificate-content h4
+    {
+        margin-top: 20px;
+    }
+
+    #certificate .container .certificate-content .web-certificate
+    {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        border-bottom: 1px solid #ffa94d;
+    }
+    #certificate .container .certificate-content .javascript-certificate
+    {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin-top: 30px;
+    }
+
+    #certificate .container .certificate-content .database-certificate
+    {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    #certificate .container .certificate-content .javascript-certificate
+    {
+        border-left: none;
+    }
+
+    /* PROJECT */
+
+    #project .container 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #project .container img
+    {
+        width: 400px;
+    }
+
+
+    #project .container h1
+    {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    
+    #project .container .project-left
+    {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin-bottom: 20px;
+    }
+
+    #project .container .project-center
+    {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        margin-bottom: 20px;
+    }
+
+    #project .container .project-right
+    {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+
+    #footer.bg-grey .container
+    {
+        width: 100%;
+    }
+
+    #footer.bg-grey .container ul li i
+    {
+        color:#199cdb;
+        padding-right: 5px;
+        margin-top: -5px;
+        font-size: 48px;
+    }
+
+    #footer.bg-grey .container ul li span
+    {
+        display:none;
+    }
+
+    /* PROJECT-CHARTER */
+
+    #project-charter .goals i
+    {
+        font-size: 36px;
+    }
+
+    #project-charter .team i
+    {
+        font-size: 36px;
+    }
+
+    #project-charter .scopes .scopes-left h4,
+    #project-charter .scopes .scopes-right h4
+    {
+    margin-bottom: 20px; 
+    }
+
+}
